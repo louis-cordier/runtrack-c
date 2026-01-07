@@ -1,7 +1,9 @@
-#include "my_putchar.c"
+#include "my_putchar.h"
 
-void my_putstr(char *str) {
-    while (*str) {
+void my_putstr(char *str)
+{
+    while (*str)
+    {
         my_putchar(*str);
         str++;
     }
