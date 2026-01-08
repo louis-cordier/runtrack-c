@@ -1,7 +1,23 @@
-#include "divide.h"
+// #include "divide.h"
+
+// void divide(int *val) {
+//     if (val) {
+//         *val /= 2;
+//     }
+// }
+
+#include <stdio.h>
+#include <stdlib.h>
+
 
 void divide(int *val) {
-    if (val) {
-        *val /= 2;
-    }
+    *val /= 2;
+}
+
+int main(void) {
+    int i =  16;
+    printf("%d ", i);
+    divide(&i);
+    printf("%d ", i);
+    return 0;
 }
